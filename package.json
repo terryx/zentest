@@ -1,0 +1,16 @@
+{
+  "name": "zentest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test_compress & npm run test_uri",
+    "test_compress": "NODE_PATH=./ node_modules/tape/bin/tape tests/compress.spec.js",
+    "test_uri": "NODE_PATH=./ node_modules/tape/bin/tape tests/check-uri.spec.js"
+  },
+  "author": "Terry Yuen",
+  "license": "ISC",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
+}
